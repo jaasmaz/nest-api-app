@@ -45,6 +45,26 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Running Docker
+
+```bash
+# build docker container
+$ docker compose up dev-db -d
+```
+
+## Prisma
+
+```bash
+# Create migrations form Prisma schema
+$ npx prisma migrate dev
+
+# Create typescript types for the schema
+$ npx prisma generate
+
+# Brows Database
+$ npx prisma studio
+```
+
 ## Test
 
 ```bash
